@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+  
+  --color-jarvis-bg: #050b14;
+  --color-jarvis-cyan: #00f0ff;
+  --color-jarvis-blue: #00a8ff;
+  --color-jarvis-red: #ff3333;
+  --color-jarvis-orange: #ffaa00;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+  }
+  .box-glow {
+    box-shadow: 0 0 10px var(--color-jarvis-cyan), inset 0 0 5px var(--color-jarvis-cyan);
+  }
+  .border-glow {
+    box-shadow: 0 0 5px currentColor;
+  }
+}
+
+body {
+  background-color: var(--color-jarvis-bg);
+  color: var(--color-jarvis-cyan);
+  font-family: var(--font-rajdhani);
+}
